@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Plus Week 4 HW</title>
+  </head>
+  <style>
+    /* Color Theme Swatches in Hex */
+    .Weather-Site-1-hex {
+      color: #f2506e;
+    }
+    .Weather-Site-2-hex {
+      color: #3a3e8c;
+    }
+    .Weather-Site-3-hex {
+      color: #2e62a6;
+    }
+    .Weather-Site-4-hex {
+      color: #38a6a6;
+    }
+    .Weather-Site-5-hex {
+      color: #f2c438;
+    }
+
+    Body {
+      font-family: "Jost", "Franklin Gothic Medium", "Arial Narrow", Arial,
+        sans-serif;
+      text-align: center;
+    }
+
+    #heading {
+      color: #f2c438;
+      font-size: 50px;
+      padding: 0;
+    }
+
+    #city {
+      border-color: #3a3e8c;
+      border-style: solid;
+      border-radius: 25px;
+      font-size: 20px;
+      padding: 3px 8px 3px 8px;
+      text-align: center;
+    }
+
+    .tabletext {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    #currently {
+      color: #38a6a6;
+    }
+
+    button {
+      font-family: "Jost", "Franklin Gothic Medium", "Arial Narrow", Arial,
+        sans-serif;
+      color: #38a6a6;
+      font-weight: 600;
+      background-color: #2e62a6;
+      font-size: 20px;
+      border-radius: 25px;
+      border: none;
+      padding: 3px 8px 3px 8px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: #f2c438;
+      color: #f2506e;
+      border: 1px;
+    }
+
+    table {
+      color: #f2506e;
+      display: inline;
+      font-size: 24px;
+    }
+
+    .content {
+      font-size: 20px;
+    }
+
+    #forecast {
+      display: grid;
+      text-align: center;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th id="heading" colspan="2">What's the Weather?</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><label class="tabletext"> Enter Name of City </label></td>
+          <td id="cityWeather" class="tabletext">Today's Weather in City:</td>
+        </tr>
+
+        <tr>
+          <td>
+            <form>
+              <input
+                type="text"
+                id="city"
+                width="100px"
+                placeholder="Please Enter City Name"
+                autocomplete="off"
+              />
+            </form>
+          </td>
+          <td>
+            <img
+              src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+              alt="Weather Icon"
+              width="100px"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button value="search" id="citySearching" input type="submit">
+              Search
+            </button>
+          </td>
+          <td class="tabletext">Temperature</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <h3 id="currently">Currently, it is</h3>
+    <br />
+
+    <div id="forecast">
+      <article class="card" id="Day1">
+        <header>
+          <h2>Day of the Week</h2>
+        </header>
+        <img
+          src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+          alt="Weather Icon"
+          width="100px"
+        />
+        <div class="content">
+          <p>Temperature</p>
+        </div>
+        <footer>Description</footer>
+      </article>
+
+      <article class="card" id="Day2">
+        <header>
+          <h2>Day of the Week</h2>
+        </header>
+        <img
+          src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+          alt="Weather Icon"
+          width="100px"
+        />
+        <div class="content">
+          <p>Temperature</p>
+        </div>
+        <footer>Description</footer>
+      </article>
+
+      <article class="card" id="Day3">
+        <header>
+          <h2>Day of the Week</h2>
+        </header>
+        <img
+          src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+          alt="WeatherIcon"
+          width="100px"
+        />
+        <div class="content">
+          <p>Temperature</p>
+        </div>
+        <footer>Description</footer>
+      </article>
+
+      <article class="card" id="Day4">
+        <header>
+          <h2>Day of the Week</h2>
+        </header>
+        <img
+          src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+          alt="Weather Icon"
+          width="100px"
+        />
+        <div class="content">
+          <p>Temperature</p>
+        </div>
+        <footer>Description</footer>
+      </article>
+
+      <article class="card" id="Day5">
+        <header>
+          <h2>Day of the Week</h2>
+        </header>
+        <img
+          src="https://www.seekpng.com/png/detail/133-1330400_weather-icon-png-image-transparent-background-weather-icon.png"
+          alt="Weather Icon"
+          width="100px"
+        />
+        <div class="content">
+          <p>Temperature</p>
+        </div>
+        <footer id="description">Description</footer>
+      </article>
+    </div>
+    <script>
+      let now = new Date();
+      let currently = document.querySelector("#currently");
+
+      let date = now.getDate();
+      let year = now.getFullYear();
+      let hours = now.getHours();
+      let minutes = now.getMinutes();
+
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ];
+      let day = days[now.getDay()];
+
+      let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ];
+      let month = months[now.getMonth()];
+
+      currently.innerHTML = `Currently, it is ${day}, ${month} ${date}, ${year}. The time is ${hours}:${minutes}.`;
+
+      /*Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form --onClick--*/
+      let searchInput = document.querySelector("#city");
+
+      let cityWeather = document.querySelector("#cityWeather");
+
+      function searching(event) {
+        event.preventDefault();
+        cityWeather.innerHTML = `Today's Weather in ${searchInput.value}:`;
+      }
+
+      let button = document.querySelector("#citySearching");
+
+      button.addEventListener("click", searching);
+    </script>
+  </body>
+</html>
